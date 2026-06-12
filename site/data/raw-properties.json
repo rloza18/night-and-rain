@@ -1,0 +1,878 @@
+[
+  {
+    "id": "e82db06c-8367-417d-b4c2-fc3708da11e9",
+    "name": "JT Avalon - 4671",
+    "public_name": "Oasis w Pool, Sauna, Mini Golf Near Natl Park!",
+    "picture": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE4MjI2NjA4MTcwNzUwODU2OQ%3D%3D/original/ced1ecf6-efc9-498e-896c-622745580907.jpeg?aki_policy=small",
+    "address": {
+      "number": "2",
+      "street": "4671 Avalon Avenue",
+      "city": "Yucca Valley",
+      "state": "CA",
+      "postcode": "92284",
+      "country": "US",
+      "country_name": "United States",
+      "coordinates": {
+        "latitude": "34.168102",
+        "longitude": "-116.386434"
+      },
+      "display": "2, 4671 Avalon Avenue, Yucca Valley, CA, 92284, US"
+    },
+    "timezone": "-0700",
+    "listed": true,
+    "currency": "USD",
+    "summary": "Welcome to our Tiny Home! Located in the heart of Yucca Valley and just 15 minutes from the national park making it the Perfect spot for your vacation!\n\nFeaturing:\n✔ Saltwater Heated Pool - we do ask for a 48 hour notice and its an additionial cost of $350 to heat\n✔ Free Heated Jacuzzi\n✔ Anime Mural for photos\n✔ Outdoor Firepit\n✔ Indoor Fireplace\n✔ Sauna\n✔ Outdoor Shower\n✔ Mini Golf\n✔ 55\" 4K TV in patio deck with lounge furniture\n✔ BBQ Grill\n✔ Manga books\n✔ Joshua trees in yard for photos",
+    "description": "Tiny home Sleeps 4 Comfortably\n\n→ 1 King Bed - Sleeps 2 (living area) \n→ 1 Queen Inflatable Bed - Sleeps 2 (living area)\n\nPlease note that this is a TINY HOME! It has minimal space. Please check photos for reference.\n\nYou get an entire home with a sauna, jacuzzi, firepit, mini golf, and private pool.\n\nI'm available to assist you throughout your stay, but the level of interaction is entirely up to you. Feel free to message me anytime! You'll also be able to self check-in upon your arrival.\n\nThis neighborhood provides a tranquil desert escape with breathtaking views of the surrounding mountains and open skies. Situated near Joshua Tree National Park, the area is known for its unique blend of rugged natural beauty and artistic charm. You'll find a mix of quiet residential streets, eclectic shops, and local eateries just a short drive away. It's an ideal spot for those seeking tranquility, outdoor adventures, and a connection to the vibrant desert culture of the high desert.\n\nFor your safety and that of our neighbors, the exterior of the home is monitored 24/7 by security.\n\nSince you’re in the desert, expect some critters, dirt, dust, and bugs. The pool can attract various wildlife, and while we clean it weekly, occasional visitors may still drop by.\n\nThe pool has a $350 fee per day and requires at least 48 hours’ notice to ensure everything is functioning properly.\n\nPlease use the pool at your own risk; we are not responsible for any accidents or injuries. Never leave pets or children unattended near the pool.",
+    "checkin": "16:00",
+    "checkout": "11:00",
+    "amenities": [
+      "ac",
+      "alfresco_dining",
+      "alfresco_shower",
+      "baking_sheet",
+      "barbeque_utensils",
+      "bbq",
+      "bed_linens",
+      "blender",
+      "board_games",
+      "body_soap",
+      "books",
+      "carbon_monoxide_detector",
+      "cleaning_before_checkout",
+      "cleaning_products",
+      "coffee",
+      "coffee_maker",
+      "conditioner",
+      "cooking_basics",
+      "dining_table",
+      "dishes_and_silverware",
+      "dryer",
+      "essentials",
+      "ethernet_connection",
+      "extra_pillows_and_blankets",
+      "fire_extinguisher",
+      "fire_pit",
+      "fireplace",
+      "first_aid_kit",
+      "free_on_premise_parking",
+      "freezer",
+      "garden",
+      "hair_dryer",
+      "hangers",
+      "heating",
+      "hot_water",
+      "hot_water_kettle",
+      "iron",
+      "jacuzzi",
+      "kitchen",
+      "laundromat_nearby",
+      "life_size_games",
+      "long_term_stays_allowed",
+      "luggage_dropoff_allowed",
+      "microwave",
+      "mini_golf",
+      "outdoor_seating",
+      "oven",
+      "patio",
+      "pool",
+      "private_entrance",
+      "private_living_room",
+      "refrigerator",
+      "rice_maker",
+      "room_darkening_shades",
+      "sauna",
+      "shampoo",
+      "shower_gel",
+      "single_level_home",
+      "smoke_detector",
+      "stove",
+      "street_parking",
+      "sun_loungers",
+      "theme_room",
+      "toaster",
+      "tv",
+      "wardrobe_or_closet",
+      "washer",
+      "wifi",
+      "wine_glasses"
+    ],
+    "capacity": {
+      "max": 4,
+      "bedrooms": 1,
+      "beds": 1,
+      "bathrooms": 1
+    },
+    "room_details": [
+      {
+        "type": "bedroom",
+        "beds": []
+      },
+      {
+        "type": "full_bathroom",
+        "beds": []
+      },
+      {
+        "type": "kitchen",
+        "beds": []
+      },
+      {
+        "type": "backyard",
+        "beds": []
+      },
+      {
+        "type": "patio",
+        "beds": []
+      },
+      {
+        "type": "balcony",
+        "beds": []
+      },
+      {
+        "type": "dining_room",
+        "beds": []
+      },
+      {
+        "type": "exterior",
+        "beds": []
+      },
+      {
+        "type": "living_room",
+        "beds": []
+      }
+    ],
+    "property_type": "tiny_house",
+    "room_type": "Entire Home",
+    "tags": [],
+    "house_rules": {
+      "pets_allowed": true,
+      "smoking_allowed": false,
+      "events_allowed": true
+    },
+    "listings": [
+      {
+        "platform": "homeaway",
+        "platform_id": "321.4183886.4758056",
+        "platform_user_id": "7088028a-2fa9-4260-a730-4350d4377f5b",
+        "platform_picture": "https://www.homeaway.com/bizops/travelerHome/picturePublicPathByAccount?accountUuid=1ce569ec-a931-4948-bd20-3c743e9fb2ba",
+        "co_hosts": []
+      },
+      {
+        "platform": "direct",
+        "platform_id": "5b37100d-bc4c-5084-8b7f-ab5eb77dfb00",
+        "platform_user_id": "38d910b4-8ab3-5775-b56c-4867f48ddbff",
+        "platform_picture": null,
+        "co_hosts": []
+      },
+      {
+        "platform": "manual",
+        "platform_id": "b6e78f61-b150-5123-8d5e-b32a7611abca",
+        "platform_user_id": "manual_16614",
+        "platform_picture": null,
+        "co_hosts": []
+      },
+      {
+        "platform": "gvr",
+        "platform_id": "46dd119e-4753-5159-b630-64104a810a2e",
+        "platform_user_id": "8c7d8df6-5a64-583e-92b1-667b5754d683",
+        "platform_picture": null,
+        "co_hosts": []
+      },
+      {
+        "platform": "airbnb",
+        "platform_id": "1246990015880454914",
+        "platform_user_id": "24802326",
+        "platform_picture": "https://a0.muscache.com/im/pictures/user/0e899e96-61dd-437d-ae18-52ebc6e4b3af.jpg?aki_policy=profile_x_medium",
+        "co_hosts": []
+      },
+      {
+        "platform": "airbnb",
+        "platform_id": "1247908427252354022",
+        "platform_user_id": "652600466",
+        "platform_picture": "https://a0.muscache.com/im/pictures/user/User/original/19532c1c-0527-4acf-8113-105bebc1b3b0.jpeg?aki_policy=profile_x_medium",
+        "co_hosts": []
+      },
+      {
+        "platform": "booking",
+        "platform_id": "1655137501",
+        "platform_user_id": "16551375",
+        "platform_picture": null,
+        "co_hosts": []
+      }
+    ],
+    "ical_imports": [],
+    "calendar_restricted": false,
+    "parent_child": null
+  },
+  {
+    "id": "bf0f6e37-3415-4454-aaa0-1591d03f0bf2",
+    "name": "JT Walpi - Red",
+    "public_name": "Joshua Tree Oasis • Pickleball • Pool • Jacuzzi",
+    "picture": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTIwNzI5ODY5NTc2ODc2NzA5Ng%3D%3D/original/417a4c64-db8b-449c-a127-af628fb5d6df.jpeg?aki_policy=small",
+    "address": {
+      "number": null,
+      "street": "64793 Walpi Drive",
+      "city": "Joshua Tree",
+      "state": "CA",
+      "postcode": "92252",
+      "country": "US",
+      "country_name": "United States",
+      "coordinates": {
+        "latitude": "34.157933",
+        "longitude": "-116.250438"
+      },
+      "display": "64793 Walpi Drive, Joshua Tree, CA, 92252, US"
+    },
+    "timezone": "-0700",
+    "listed": true,
+    "currency": "USD",
+    "summary": "Modern desert escape with private saltwater pool, jacuzzi, pickleball and bocce courts, luxurious loungers, indoor fireplace and stunning views, perfect for families and groups up to six.",
+    "description": "🏊‍♂️ POOL & HOT TUB\n\n- Saltwater heated pool and jacuzzi provide a refreshing retreat.\n\n- Queen‑size day bed loungers surround the water for ultimate comfort.\n\n🎾 PICKLEBALL & BOCCE\n\n- Private pickleball court and bocce ball court invite friendly competition.\n\n- Spacious outdoor area perfect for active play.\n\n🌅 SUNSET & FIRE PIT\n\n- Outdoor fire pit creates a memorable evening setting.\n\n- Alfresco dining table and BBQ grill for outdoor meals.\n\n- Hammocks and lounge chairs let you soak in spectacular sunsets.\n\n🛏️ SLEEPING\n\n- Two king bedrooms and a queen inflatable bed comfortably sleep six.\n\n- Plush linens and extra pillows ensure a restful stay.\n\n🔑 GUEST ACCESS\n\n- Entire home is yours with private entrance and self‑check‑in via smart lock.\n\n- Free on‑site parking and EV charger for electric vehicles.\n\n- Air‑conditioned living space equipped with TV, Wi‑Fi, Sonos speakers and high‑speed Ethernet.\n\n- Fully fenced backyard guarantees privacy.\n\n- Pets are welcome for a family‑friendly stay.\n\nTwo days before your arrival, you will receive instructions on where to park, how to locate the home and how to access it.\n\nI am here for you during your stay, but our level of interaction is up to you. I'm only a message away. You will be able to self check-in when you arrive.\n\nWelcome to your serene desert escape nestled within the rugged beauty of the Mojave Desert. Known for its breathtaking views of the iconic Joshua trees and rocky landscapes, this quiet location offers easy access to both the natural wonders of Joshua Tree National Park and the eclectic charm of the nearby Joshua Tree village.\nLocal Attractions:\n\nJoshua Tree National Park – Famous for its stunning rock formations and desert landscapes.\nKeys View – A scenic overlook offering panoramic views of the Coachella Valley and San Andreas Fault.\nPioneertown – A quirky Old West-style town originally built as a movie set.\nThe Integratron – A unique structure offering sound baths and mystical experiences.\nNoah Purifoy Outdoor Desert Art Museum – An open-air museum showcasing large-scale, desert-inspired art installations.\n\nA car is essential — Joshua Tree is a rural desert community with no public transit. The park entrance is minutes away, and most errands require driving. Palm Springs International Airport (PSP) is approximately 40 minutes south. LAX is roughly 2.5 hours west. Ride-share has limited availability in Joshua Tree; a rental car is strongly recommended. Gas up and stock supplies before heading out — the desert is remote.\n\n⚠️ HOUSE RULES & NOTES\n\n- Treat the property with respect; neighbors share the quiet desert community.\n\n- Security cameras monitor the exterior 24/7 for safety.\n\n- Pool is cleaned twice weekly; use at your own risk and never leave children or pets unattended.\n\n- Registration code: CESTRP‑2024‑00447.\n\n- Desert environment includes natural wildlife; enjoy the authentic Joshua Tree experience.\n\n-POOL Heating Fee of 350$ per day and we require a 48 hour notice to ensure pool gets hot. (jacuzzi is free to heat)",
+    "checkin": "16:00",
+    "checkout": "11:00",
+    "amenities": [
+      "ac",
+      "alfresco_dining",
+      "baking_sheet",
+      "barbeque_utensils",
+      "bathtub",
+      "bbq",
+      "bed_linens",
+      "blender",
+      "board_games",
+      "body_soap",
+      "carbon_monoxide_detector",
+      "ceiling_fan",
+      "cleaning_before_checkout",
+      "cleaning_products",
+      "coffee",
+      "coffee_maker",
+      "conditioner",
+      "cooking_basics",
+      "dining_table",
+      "dishes_and_silverware",
+      "dryer",
+      "essentials",
+      "ethernet_connection",
+      "ev_charger",
+      "extra_pillows_and_blankets",
+      "fire_extinguisher",
+      "fire_pit",
+      "fireplace",
+      "first_aid_kit",
+      "free_on_premise_parking",
+      "freezer",
+      "garden",
+      "garden_view",
+      "hair_dryer",
+      "hammock",
+      "hangers",
+      "heating",
+      "hot_water",
+      "hot_water_kettle",
+      "iron",
+      "jacuzzi",
+      "kitchen",
+      "long_term_stays_allowed",
+      "luggage_dropoff_allowed",
+      "microwave",
+      "mountain_view",
+      "outdoor_fireplace",
+      "outdoor_kitchen",
+      "outdoor_seating",
+      "oven",
+      "pool",
+      "pool_view",
+      "private_entrance",
+      "private_living_room",
+      "refrigerator",
+      "room_darkening_shades",
+      "shampoo",
+      "shower",
+      "shower_gel",
+      "single_level_home",
+      "smoke_detector",
+      "stove",
+      "sun_loungers",
+      "toaster",
+      "tv",
+      "wardrobe_or_closet",
+      "washer",
+      "wifi",
+      "wine_glasses"
+    ],
+    "capacity": {
+      "max": 6,
+      "bedrooms": 2,
+      "beds": 2,
+      "bathrooms": 1
+    },
+    "room_details": [
+      {
+        "type": "bedroom",
+        "beds": [
+          {
+            "type": "king_bed",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "type": "bedroom",
+        "beds": [
+          {
+            "type": "king_bed",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "type": "full_bathroom",
+        "beds": []
+      },
+      {
+        "type": "backyard",
+        "beds": []
+      },
+      {
+        "type": "courtyard",
+        "beds": []
+      },
+      {
+        "type": "exterior",
+        "beds": []
+      },
+      {
+        "type": "hot_tub",
+        "beds": []
+      },
+      {
+        "type": "pool",
+        "beds": []
+      },
+      {
+        "type": "kitchen",
+        "beds": []
+      },
+      {
+        "type": "patio",
+        "beds": []
+      },
+      {
+        "type": "living_room",
+        "beds": []
+      },
+      {
+        "type": "living_room",
+        "beds": [
+          {
+            "type": "air_mattress_bed",
+            "quantity": 1
+          },
+          {
+            "type": "couch_bed",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "type": "exterior",
+        "beds": []
+      }
+    ],
+    "property_type": "house",
+    "room_type": "Entire Home",
+    "tags": [],
+    "house_rules": {
+      "pets_allowed": true,
+      "smoking_allowed": false,
+      "events_allowed": true
+    },
+    "listings": [
+      {
+        "platform": "homeaway",
+        "platform_id": "321.4131788.4705958",
+        "platform_user_id": "7088028a-2fa9-4260-a730-4350d4377f5b",
+        "platform_picture": "https://www.homeaway.com/bizops/travelerHome/picturePublicPathByAccount?accountUuid=1ce569ec-a931-4948-bd20-3c743e9fb2ba",
+        "co_hosts": []
+      },
+      {
+        "platform": "airbnb",
+        "platform_id": "1207298695768767096",
+        "platform_user_id": "24802326",
+        "platform_picture": "https://a0.muscache.com/im/pictures/user/0e899e96-61dd-437d-ae18-52ebc6e4b3af.jpg?aki_policy=profile_x_medium",
+        "co_hosts": []
+      },
+      {
+        "platform": "direct",
+        "platform_id": "645a2e6e-d8fa-5bd1-8a78-db35bf23af12",
+        "platform_user_id": "38d910b4-8ab3-5775-b56c-4867f48ddbff",
+        "platform_picture": null,
+        "co_hosts": []
+      },
+      {
+        "platform": "manual",
+        "platform_id": "88bbebc0-4661-5569-bfa6-c2ce2e6d6ddf",
+        "platform_user_id": "manual_16614",
+        "platform_picture": null,
+        "co_hosts": []
+      },
+      {
+        "platform": "gvr",
+        "platform_id": "beaadc0c-5c11-5573-ab80-2a4a82e1b220",
+        "platform_user_id": "8c7d8df6-5a64-583e-92b1-667b5754d683",
+        "platform_picture": null,
+        "co_hosts": []
+      },
+      {
+        "platform": "booking",
+        "platform_id": "1308624301",
+        "platform_user_id": "13086243",
+        "platform_picture": null,
+        "co_hosts": []
+      }
+    ],
+    "ical_imports": [],
+    "calendar_restricted": false,
+    "parent_child": null
+  },
+  {
+    "id": "547bbb9c-7e50-4d45-8636-00f000d218e4",
+    "name": "JT Walpi - Purple",
+    "public_name": "Joshua Tree Dream | Pool, Pickleball, Dome, More",
+    "picture": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTIwNzMwNjM1NDUwMTAwODQ4Ng%3D%3D/original/0201393f-6146-4e10-bb16-c41cf71400c1.jpeg?aki_policy=small",
+    "address": {
+      "number": null,
+      "street": "64726 Walpi Drive",
+      "city": "Joshua Tree",
+      "state": "CA",
+      "postcode": "92252",
+      "country": "US",
+      "country_name": "United States",
+      "coordinates": {
+        "latitude": "34.1589476",
+        "longitude": "-116.2493156"
+      },
+      "display": "64726 Walpi Drive, Joshua Tree, CA, 92252, US"
+    },
+    "timezone": "-0700",
+    "listed": true,
+    "currency": "USD",
+    "summary": "Welcome to your serene oasis in Joshua Tree! This modern retreat features a private pool, luxurious loungers, and stunning desert views. Enjoy a game of pickleball on your private court or stargaze in the bubble dome under the stars.\n\n✔ Dome for stargazing & Glamping w/ QUEEN bed\n✔ Saltwater Heated Pool w/ fee $350, Free Heated Jacuzzi\n✔ Queen size Day bed loungers\n✔ Bocce Ball Court\n✔ BBQ w/ Outdoor dining table\n✔ Pickleball Court\n✔ Outdoor Firepit\n✔ Fantastic views & sunsets\n✔ Indoor Fireplace",
+    "description": "*** Sleeps 6 Comfortably ***\n\n→ 1 King Bed - Sleeps 2 - Bedroom\n→ 1 King Bed - Sleeps 2 - Bedroom\n→ 1 Queen Inflatable Bed - Sleeps 2 (Living area bed)\nSleeps 8 if you want to use the dome bed\n\nYou get an entire home with all the amenities.\n\nTwo days before your arrival, you will receive instructions on where to park, how to locate the home and how to access it.\n\nI am here for you during your stay, but our level of interaction is up to you. I'm only a message away. You will be able to self check-in when you arrive.\n\nIn the high desert community of Joshua Tree — one of California's most distinctive and creatively charged small towns, sitting at the entrance to Joshua Tree National Park — the park itself is a world-renowned landscape of twisted Joshua trees, dramatic boulder formations, and dark skies perfect for stargazing. The town has quietly become an arts mecca: galleries, funky vintage shops, and excellent restaurants line the main corridor. Don't miss Pappy & Harriet's Pioneertown Palace (~10 min) for live music and BBQ in a genuine Old West movie set town. Palm Springs is about 40 minutes south for additional dining, mid-century architecture, and resort spas.\n\nA car is essential — Joshua Tree is a rural desert community with no public transit. The park entrance is minutes away, and most errands require driving. Palm Springs International Airport (PSP) is approximately 40 minutes south. LAX is roughly 2.5 hours west. Ride-share has limited availability in Joshua Tree; a rental car is strongly recommended. Gas up and stock supplies before heading out — the desert is remote.\n\nPlease remember that you will be staying in a home, not a hotel. We do have neighbors therefore, we ask that you treat our space with the same respect you would show your own. If any problems arise, we will do our best to take action ASAP, but there is no one living on site. \n\nFor the safety and security of our guests and neighbors, the exterior of this home is monitored 24/7 by Home Security\n\nPlease remember that you are staying in the desert, there will be critters, dirt, dust, and bugs.\n\nThe pool has a $350 fee per day and requires at least 48 hours’ notice to ensure everything is functioning properly.\n\nThe pool attracts all sorts of critters and from time to time, they do fall in the pool. Please rest assured, we clean it 2 times a week.\n\nUse the pool at your own risk, we are not responsible for any accidents or injuries.\n\nNEVER leave pets or children unattended around the pool.\n\nWe have two homes on this lot, they can be rented together for large parties. Message us for info.",
+    "checkin": "16:00",
+    "checkout": "11:00",
+    "amenities": [
+      "ac",
+      "alfresco_dining",
+      "baking_sheet",
+      "barbeque_utensils",
+      "bathtub",
+      "bbq",
+      "bed_linens",
+      "blender",
+      "body_soap",
+      "carbon_monoxide_detector",
+      "ceiling_fan",
+      "cleaning_before_checkout",
+      "coffee",
+      "coffee_maker",
+      "conditioner",
+      "cooking_basics",
+      "dining_table",
+      "dishes_and_silverware",
+      "dryer",
+      "essentials",
+      "ethernet_connection",
+      "ev_charger",
+      "extra_pillows_and_blankets",
+      "fire_extinguisher",
+      "fire_pit",
+      "fireplace",
+      "first_aid_kit",
+      "free_on_premise_parking",
+      "freezer",
+      "garden",
+      "garden_view",
+      "hair_dryer",
+      "hammock",
+      "hangers",
+      "heating",
+      "hot_water",
+      "hot_water_kettle",
+      "iron",
+      "jacuzzi",
+      "kitchen",
+      "laptop_friendly_workspace",
+      "long_term_stays_allowed",
+      "luggage_dropoff_allowed",
+      "microwave",
+      "mountain_view",
+      "outdoor_kitchen",
+      "outdoor_seating",
+      "oven",
+      "patio",
+      "pool",
+      "pool_view",
+      "private_entrance",
+      "private_living_room",
+      "refrigerator",
+      "rice_maker",
+      "room_darkening_shades",
+      "shampoo",
+      "shower",
+      "shower_gel",
+      "single_level_home",
+      "smoke_detector",
+      "stove",
+      "sun_loungers",
+      "toaster",
+      "tv",
+      "wardrobe_or_closet",
+      "washer",
+      "wifi",
+      "wine_glasses"
+    ],
+    "capacity": {
+      "max": 6,
+      "bedrooms": 2,
+      "beds": 2,
+      "bathrooms": 1
+    },
+    "room_details": [
+      {
+        "type": "full_bathroom",
+        "beds": []
+      },
+      {
+        "type": "bedroom",
+        "beds": [
+          {
+            "type": "king_bed",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "type": "bedroom",
+        "beds": [
+          {
+            "type": "king_bed",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "type": "backyard",
+        "beds": []
+      },
+      {
+        "type": "exterior",
+        "beds": []
+      },
+      {
+        "type": "living_room",
+        "beds": [
+          {
+            "type": "air_mattress_bed",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "type": "hot_tub",
+        "beds": []
+      },
+      {
+        "type": "laundry_room",
+        "beds": []
+      },
+      {
+        "type": "kitchen",
+        "beds": []
+      },
+      {
+        "type": "pool",
+        "beds": []
+      },
+      {
+        "type": "terrace",
+        "beds": []
+      },
+      {
+        "type": "patio",
+        "beds": []
+      },
+      {
+        "type": "living_room",
+        "beds": []
+      },
+      {
+        "type": "dining_room",
+        "beds": []
+      }
+    ],
+    "property_type": "house",
+    "room_type": "Entire Home",
+    "tags": [],
+    "house_rules": {
+      "pets_allowed": true,
+      "smoking_allowed": false,
+      "events_allowed": false
+    },
+    "listings": [
+      {
+        "platform": "homeaway",
+        "platform_id": "321.4131830.4706000",
+        "platform_user_id": "7088028a-2fa9-4260-a730-4350d4377f5b",
+        "platform_picture": "https://www.homeaway.com/bizops/travelerHome/picturePublicPathByAccount?accountUuid=1ce569ec-a931-4948-bd20-3c743e9fb2ba",
+        "co_hosts": []
+      },
+      {
+        "platform": "airbnb",
+        "platform_id": "1207306354501008486",
+        "platform_user_id": "24802326",
+        "platform_picture": "https://a0.muscache.com/im/pictures/user/0e899e96-61dd-437d-ae18-52ebc6e4b3af.jpg?aki_policy=profile_x_medium",
+        "co_hosts": []
+      },
+      {
+        "platform": "direct",
+        "platform_id": "1fdfc65d-4c4d-5c10-926f-dcbd00d96e2e",
+        "platform_user_id": "38d910b4-8ab3-5775-b56c-4867f48ddbff",
+        "platform_picture": null,
+        "co_hosts": []
+      },
+      {
+        "platform": "manual",
+        "platform_id": "b68eb5df-c644-5a5d-9a64-899a498b6f22",
+        "platform_user_id": "manual_16614",
+        "platform_picture": null,
+        "co_hosts": []
+      },
+      {
+        "platform": "gvr",
+        "platform_id": "76491900-6a25-50e5-b982-f459f91673b6",
+        "platform_user_id": "8c7d8df6-5a64-583e-92b1-667b5754d683",
+        "platform_picture": null,
+        "co_hosts": []
+      },
+      {
+        "platform": "booking",
+        "platform_id": "1308619901",
+        "platform_user_id": "13086199",
+        "platform_picture": null,
+        "co_hosts": []
+      }
+    ],
+    "ical_imports": [],
+    "calendar_restricted": false,
+    "parent_child": null
+  },
+  {
+    "id": "8878daf6-0d90-4eeb-a2ec-7864e8633a91",
+    "name": "JT Avalon - 4655",
+    "public_name": "Tiny Home w Pool, Hot Tub, Sauna, Golf & More!",
+    "picture": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI0Nzc4ODUzNDYwMzc0NzEyOA%3D%3D/original/5da48a80-f845-4c0f-b668-e46001b7f57d.jpeg?aki_policy=small",
+    "address": {
+      "number": null,
+      "street": "4655 Avalon Avenue",
+      "city": "Yucca Valley",
+      "state": "CA",
+      "postcode": "92284",
+      "country": "US",
+      "country_name": "United States",
+      "coordinates": {
+        "latitude": "34.168377",
+        "longitude": "-116.386454"
+      },
+      "display": "4655 Avalon Avenue, Yucca Valley, CA, 92284, US"
+    },
+    "timezone": "-0700",
+    "listed": true,
+    "currency": "USD",
+    "summary": "Welcome to our Tiny Home! Located in the heart of Yucca Valley and just 15 minutes from the national park making it the Perfect spot for your vacation!\n\nFeaturing:\n✔ Saltwater Heated Pool - we do ask for a 48 hour notice and its an additionial cost of $350 to heat\n✔ Free Heated Jacuzzi\n✔ Horseshoe pit\n✔ Outdoor Firepit\n✔ Indoor Fireplace\n✔ Sauna\n✔ Outdoor Shower\n✔ Mini Golf\n✔ BBQ Grill\n✔ Joshua trees in yard for photos",
+    "description": "Tiny home Sleeps 4 Comfortably\n\n→ 1 King Bed - Sleeps 2 (living area)\n→ 1 Queen Inflatable Bed - Sleeps 2 (living area)\n\nPlease note that this is a TINY HOME! It has minimal space. Please check photos for reference.\n\nYou get an entire home with a private pool, sauna, jacuzzi, mini golf, Horse Shoes, and firepit.\n\nTwo days before your arrival, you will receive instructions on where to park, how to locate the apartment and how to access it.\n\nI am here for you during your stay, but our level of interaction is up to you. I'm only a message away. You will be able to self check-in upon arrival.\n\nThis neighborhood offers a serene desert escape with breathtaking views of the surrounding mountains and open skies. Nestled near Joshua Tree National Park, the area is known for its unique blend of rugged natural beauty and artistic charm. You'll find a mix of quiet residential streets, eclectic shops, and local eateries just a short drive away. It's an ideal spot for those seeking tranquility, outdoor adventures, and a connection to the vibrant desert culture of the high desert.\n\nFor the safety and security of our guests and neighbors, the exterior of this home is monitored 24/7 by Home Security\n\nPlease remember that you are staying in the desert, there will be critters, dirt, dust, and bugs.\n\nThe pool has a $350 fee per day and requires at least 48 hours’ notice to ensure everything is functioning properly.\n\nThe pool attracts all sorts of critters and from time to time, they do fall in the pool. Please rest assured, we clean it weekly. \n\nUse the pool at your own risk, we are not responsible for any accidents or injuries.\n\nNEVER leave pets or children unattended around the pool.",
+    "checkin": "16:00",
+    "checkout": "11:00",
+    "amenities": [
+      "ac",
+      "alfresco_dining",
+      "alfresco_shower",
+      "baby_bath",
+      "baking_sheet",
+      "barbeque_utensils",
+      "bbq",
+      "bed_linens",
+      "blender",
+      "board_games",
+      "body_soap",
+      "books",
+      "carbon_monoxide_detector",
+      "childrens_dinnerware",
+      "cleaning_before_checkout",
+      "cleaning_products",
+      "coffee",
+      "coffee_maker",
+      "conditioner",
+      "cooking_basics",
+      "dining_table",
+      "dishes_and_silverware",
+      "dryer",
+      "essentials",
+      "ethernet_connection",
+      "extra_pillows_and_blankets",
+      "fire_extinguisher",
+      "fire_pit",
+      "fireplace",
+      "fireplace_guards",
+      "first_aid_kit",
+      "free_on_premise_parking",
+      "freezer",
+      "garden",
+      "hair_dryer",
+      "hangers",
+      "heating",
+      "high_chair",
+      "hot_water",
+      "hot_water_kettle",
+      "iron",
+      "jacuzzi",
+      "kitchen",
+      "laptop_friendly_workspace",
+      "laundromat_nearby",
+      "long_term_stays_allowed",
+      "luggage_dropoff_allowed",
+      "microwave",
+      "mini_golf",
+      "outdoor_seating",
+      "oven",
+      "patio",
+      "pool",
+      "private_entrance",
+      "private_living_room",
+      "refrigerator",
+      "rice_maker",
+      "room_darkening_shades",
+      "sauna",
+      "shampoo",
+      "shower_gel",
+      "single_level_home",
+      "smoke_detector",
+      "stove",
+      "street_parking",
+      "sun_loungers",
+      "theme_room",
+      "toaster",
+      "travel_crib",
+      "tv",
+      "wardrobe_or_closet",
+      "washer",
+      "wifi",
+      "wine_glasses"
+    ],
+    "capacity": {
+      "max": 4,
+      "bedrooms": 1,
+      "beds": 1,
+      "bathrooms": 1
+    },
+    "room_details": [
+      {
+        "type": "bedroom",
+        "beds": [
+          {
+            "type": "king_bed",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "type": "full_bathroom",
+        "beds": []
+      },
+      {
+        "type": "exterior",
+        "beds": []
+      },
+      {
+        "type": "patio",
+        "beds": []
+      },
+      {
+        "type": "kitchen",
+        "beds": []
+      },
+      {
+        "type": "hot_tub",
+        "beds": []
+      },
+      {
+        "type": "laundry_room",
+        "beds": []
+      },
+      {
+        "type": "pool",
+        "beds": []
+      },
+      {
+        "type": "backyard",
+        "beds": []
+      },
+      {
+        "type": "dining_room",
+        "beds": []
+      },
+      {
+        "type": "living_room",
+        "beds": []
+      }
+    ],
+    "property_type": "tiny_house",
+    "room_type": "Entire Home",
+    "tags": [],
+    "house_rules": {
+      "pets_allowed": true,
+      "smoking_allowed": false,
+      "events_allowed": false
+    },
+    "listings": [
+      {
+        "platform": "homeaway",
+        "platform_id": "321.4183921.4758091",
+        "platform_user_id": "7088028a-2fa9-4260-a730-4350d4377f5b",
+        "platform_picture": "https://www.homeaway.com/bizops/travelerHome/picturePublicPathByAccount?accountUuid=1ce569ec-a931-4948-bd20-3c743e9fb2ba",
+        "co_hosts": []
+      },
+      {
+        "platform": "manual",
+        "platform_id": "40a0ff6b-bfc5-54c5-8513-d4d4357c39c2",
+        "platform_user_id": "manual_16614",
+        "platform_picture": null,
+        "co_hosts": []
+      },
+      {
+        "platform": "direct",
+        "platform_id": "e2b2d4f3-32d9-5ea2-95e9-1507d2e81720",
+        "platform_user_id": "38d910b4-8ab3-5775-b56c-4867f48ddbff",
+        "platform_picture": null,
+        "co_hosts": []
+      },
+      {
+        "platform": "gvr",
+        "platform_id": "74e6ea35-773d-5ac6-bb51-6f0e352e94ec",
+        "platform_user_id": "8c7d8df6-5a64-583e-92b1-667b5754d683",
+        "platform_picture": null,
+        "co_hosts": []
+      },
+      {
+        "platform": "airbnb",
+        "platform_id": "1247788534603747128",
+        "platform_user_id": "24802326",
+        "platform_picture": "https://a0.muscache.com/im/pictures/user/0e899e96-61dd-437d-ae18-52ebc6e4b3af.jpg?aki_policy=profile_x_medium",
+        "co_hosts": []
+      }
+    ],
+    "ical_imports": [],
+    "calendar_restricted": false,
+    "parent_child": null
+  }
+]
