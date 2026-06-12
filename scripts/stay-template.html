@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{stayName}} · Night &amp; Rain — Joshua Tree Direct Booking</title>
+  <meta name="description" content="{{tagline}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+{{header}}
+
+<main>
+  <section class="stay-hero">
+    <div class="photo" style="background-image: url('/assets/img/{{slug}}/{{heroImage}}')"></div>
+  </section>
+
+  <div class="wrap stay-title">
+    <div class="card">
+      <a class="crumb" href="/#stays">← All stays</a>
+      <h1>{{stayName}}</h1>
+      <p class="tagline">{{tagline}}</p>
+      <div class="facts">
+        <span>{{town}}, CA</span>
+        <span>Sleeps {{sleeps}}</span>
+        <span>{{bedrooms}} bedroom{{bedroomsPlural}}</span>
+        <span>{{bathrooms}} bath</span>
+        <span>Check-in {{checkin}}</span>
+      </div>
+      <div class="cta-row">
+        <a class="cta-button" href="#book">Check availability</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="section wrap" id="gallery">
+    <div class="section-head">
+      <p class="eyebrow">The space</p>
+      <h2>Take a look around</h2>
+    </div>
+    <div class="gallery">
+{{gallery}}
+    </div>
+  </section>
+
+  <section class="section wrap" id="details">
+    <div class="section-head">
+      <p class="eyebrow">What you get</p>
+      <h2>Made for desert evenings</h2>
+    </div>
+    <div class="amenities">
+{{amenities_pills}}
+    </div>
+    <p class="stay-desc" style="margin-top: 2.2rem;">{{description_html}}</p>
+  </section>
+
+  <section class="section sky booking" id="book">
+    <div class="wrap inner">
+      <div>
+        <p class="eyebrow">Book direct</p>
+        <h2>Better rates, straight from us.</h2>
+        <p class="blurb">Booking here skips the platform fees — that's real money back in your pocket, and you talk directly with the people who care for this home.</p>
+      </div>
+      <!-- HOSPITABLE-WIDGET:{{uuid}} — replace the .widget-slot below with the embed
+           snippet from Hospitable → Direct → Widgets once Direct is activated.
+           Container must be ≥320px wide × ≥900px tall. -->
+      <div class="widget-slot">
+        <div class="booking-fallback">
+          <p>Direct booking is launching — email us for dates and our best rate. We answer fast.</p>
+          <a class="cta-button" href="mailto:rafa@knightandreign.com?subject=Booking%20inquiry%3A%20{{stayName}}">Email to book</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{{footer}}
+</body>
+</html>
