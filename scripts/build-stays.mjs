@@ -30,7 +30,7 @@ const HEADER = `
   <nav class="nav" id="nav">
     <a href="/#stays">The Stays</a>
     <a href="/#why">Book Direct</a>
-    <a href="/#area">Joshua Tree</a>
+    <a href="/about/">About</a>
     <a class="nav-cta" href="#book">Book Your Stay</a>
   </nav>
 </header>`;
@@ -49,8 +49,8 @@ const FOOTER = `
       </div>
       <div class="footer-col">
         <h4>Explore</h4>
+        <a href="/about/">About</a>
         <a href="/#why">Book Direct</a>
-        <a href="/#area">Joshua Tree</a>
         <a href="/#join">Join the List</a>
         <a href="mailto:rafa@knightandreign.com">Contact</a>
       </div>
