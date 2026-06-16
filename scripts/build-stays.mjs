@@ -103,7 +103,7 @@ ${HEADER}
   </div>
 </section>
 
-<section class="stay-body wrap">
+<section class="stay-layout wrap">
   <div class="stay-main">
     <header class="stay-head">
       <h1>${s.name}</h1>

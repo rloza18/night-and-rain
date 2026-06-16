@@ -247,7 +247,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.04; m
 .pc-more:hover .pc-overlay { background: rgba(20,28,38,.68); }
 
 /* two-column body */
-.stay-body { display: grid; grid-template-columns: 1fr 380px; gap: clamp(2rem, 5vw, 4.5rem); align-items: start; margin: clamp(2.5rem, 6vh, 4rem) auto; }
+.stay-layout { display: grid; grid-template-columns: 1fr 380px; gap: clamp(2rem, 5vw, 4.5rem); align-items: start; margin: clamp(2.5rem, 6vh, 4rem) auto; }
 .stay-head h1 { font-size: clamp(2.2rem, 4.5vw, 3.4rem); margin: 0 0 .4rem; }
 .stay-loc { color: var(--ink-80); font-size: 1rem; margin: 0 0 1rem; }
 .stay-facts { display: flex; flex-wrap: wrap; align-items: center; list-style: none; padding: 0; margin: 0; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--moon-gray); }
@@ -293,7 +293,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.04; m
 @media (max-width: 860px) {
   .more-grid { grid-template-columns: 1fr; }
   /* stack: booking card moves up under the photos/title */
-  .stay-body { grid-template-columns: 1fr; gap: 0; }
+  .stay-layout { grid-template-columns: 1fr; gap: 0; }
   .stay-main { order: 2; }
   .booking-rail { order: 1; position: static; margin-bottom: 2.5rem; }
   .photo-collage { aspect-ratio: 3 / 2; }
