@@ -271,7 +271,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.04; m
 .book { background: var(--sand); text-align: center; }
 .book h2 { font-size: clamp(2rem,4.5vw,3.2rem); margin-bottom: .8rem; }
 .book p { color: var(--ink-80); max-width: 46ch; margin: 0 auto 2rem; }
-.widget-slot { max-width: 760px; margin: 2rem auto 0; min-height: 120px; border: 1px dashed var(--gold); background: rgba(255,255,255,.4); display: flex; align-items: center; justify-content: center; padding: 2rem; color: var(--ink-soft); font-size: .9rem; }
+.widget-slot { max-width: 820px; margin: 2rem auto 0; }
+.widget-slot iframe { display: block; width: 100%; border: 0; border-radius: 14px; overflow: hidden; background: rgba(255,255,255,.5); }
 
 /* other stays */
 .more-stays { text-align: center; }
