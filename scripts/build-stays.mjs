@@ -148,10 +148,9 @@ ${HEADER}
     <p class="eyebrow">Reserve</p>
     <h2>Book ${s.name} direct.</h2>
     <p>Real-time availability and the best rate, straight from us — no platform fees. Check your dates below.</p>
-    <!-- TODO: Boostly Connect booking widget for this property.
-         WordPress shortcode: [bly_booking_sidebar] / [bly_property uuid="${s.uuid}"]
-         Hospitable UUID: ${s.uuid} -->
-    <div class="widget-slot">Booking widget — connects here once the site is live on WordPress (Hospitable ${s.uuid.slice(0, 8)}…). For now, email <a href="mailto:rafa@knightandreign.com" style="color:var(--midnight);text-decoration:underline;margin-left:.3rem;">rafa@knightandreign.com</a> to reserve.</div>
+    <div class="widget-slot">
+      <iframe id="booking-iframe" title="Book ${s.name}" sandbox="allow-top-navigation allow-scripts allow-same-origin allow-forms allow-popups" style="width:100%;min-height:900px;border:0;" frameborder="0" src="https://booking.hospitable.com/widget/9dab6440-8935-4d77-af83-689e31a292df/${s.widgetId}"></iframe>
+    </div>
   </div>
 </section>
 
