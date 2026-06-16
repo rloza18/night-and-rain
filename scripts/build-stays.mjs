@@ -73,14 +73,15 @@ function galleryImages(slug) {
 
 for (const s of stays) {
   const imgs = galleryImages(s.slug);
-  const slides = imgs.map((f, i) =>
-    `<img class="ss-slide${i === 0 ? ' is-active' : ''}" src="/assets/library/${s.slug}/${f}" alt="${s.name} — photo ${i + 1} of ${imgs.length}" data-index="${i}" loading="${i < 2 ? 'eager' : 'lazy'}">`
-  ).join('\n      ');
-  const thumbs = imgs.map((f, i) =>
-    `<button class="ss-thumb${i === 0 ? ' is-active' : ''}" data-index="${i}" aria-label="View photo ${i + 1}"><img src="/assets/library/${s.slug}/${f}" alt="" loading="lazy"></button>`
-  ).join('\n      ');
+  // collage: hero image as the main tile, next 4 in the grid; full ordered list feeds the lightbox
+  const ordered = [s.hero, ...imgs.filter(f => f !== s.hero)];
+  const imagesJson = JSON.stringify(ordered.map(f => `/assets/library/${s.slug}/${f}`));
+  const collageCells = ordered.slice(1, 5).map((f, i) => {
+    const isLast = i === 3;
+    return `<button class="pc-cell${isLast ? ' pc-more' : ''}" data-index="${i + 1}" aria-label="View photo ${i + 2}"><img src="/assets/library/${s.slug}/${f}" alt="" loading="lazy">${isLast ? `<span class="pc-overlay">View all ${ordered.length} photos</span>` : ''}</button>`;
+  }).join('\n      ');
 
-  const highlights = s.highlights.map(h => `<li>${h}</li>`).join('\n      ');
+  const highlights = s.highlights.map(h => `<li>${h}</li>`).join('\n        ');
 
   const others = stays.filter(o => o.slug !== s.slug).map(o =>
     `<a class="more-card" href="/stays/${o.slug}/"><img src="/assets/library/${o.slug}/${o.hero}" alt="${o.name}" loading="lazy"><span>${o.name}</span></a>`
@@ -89,79 +90,73 @@ for (const s of stays) {
   const page = `${HEAD(s)}
 ${HEADER}
 
-<section class="stay-hero" id="top">
-  <div class="bg"><img src="/assets/library/${s.slug}/${s.hero}" alt="${s.name}"></div>
-  <div class="inner wrap">
-    <a class="back" href="/#stays">← All Stays</a>
-    <h1>${s.name}</h1>
-    <p class="tagline">${s.tagline}</p>
-    <ul class="facts">
-      <li>${s.type}</li>
-      <li>${s.town}</li>
-      <li>Sleeps ${s.sleeps}</li>
-      <li>${s.bedrooms} Bedroom${s.bedrooms > 1 ? 's' : ''}</li>
-      <li>${s.baths} Bath</li>
-    </ul>
-    <a class="btn btn-light" href="#book">Book Your Stay</a>
+<section class="stay-topbar wrap">
+  <a class="back" href="/#stays">&#8249; All stays</a>
+</section>
+
+<section class="photo-collage wrap" data-gallery data-images='${imagesJson}'>
+  <button class="pc-main" data-index="0" aria-label="View photos of ${s.name}">
+    <img src="/assets/library/${s.slug}/${s.hero}" alt="${s.name}" loading="eager">
+  </button>
+  <div class="pc-grid">
+      ${collageCells}
   </div>
 </section>
 
-<section class="section book" id="book">
-  <div class="wrap">
-    <p class="eyebrow">Reserve</p>
-    <h2>Book ${s.name} direct.</h2>
-    <p>Real-time availability and the best rate, straight from us — no platform fees. Pick your dates below.</p>
-    <div class="widget-slot">
-      <iframe id="booking-iframe" title="Book ${s.name}" sandbox="allow-top-navigation allow-scripts allow-same-origin allow-forms allow-popups" style="width:100%;min-height:900px;border:0;" frameborder="0" src="https://booking.hospitable.com/widget/9dab6440-8935-4d77-af83-689e31a292df/${s.widgetId}"></iframe>
+<section class="stay-body wrap">
+  <div class="stay-main">
+    <header class="stay-head">
+      <h1>${s.name}</h1>
+      <p class="stay-loc">${s.town}, California</p>
+      <ul class="stay-facts">
+        <li>${s.type}</li>
+        <li>Sleeps ${s.sleeps}</li>
+        <li>${s.bedrooms} Bedroom${s.bedrooms > 1 ? 's' : ''}</li>
+        <li>${s.baths} Bath</li>
+      </ul>
+    </header>
+
+    <div class="stay-divider"></div>
+
+    <div class="stay-section">
+      <h2>About ${s.name}</h2>
+      <div class="description">
+        ${s.intro.map(p => `<p>${p}</p>`).join('\n        ')}
+      </div>
+    </div>
+
+    <div class="stay-divider"></div>
+
+    <div class="stay-section">
+      <h2>What this place offers</h2>
+      <ul class="amenities">
+        ${highlights}
+      </ul>
+    </div>
+
+    <div class="stay-divider"></div>
+
+    <div class="stay-section">
+      <h2>Good to know</h2>
+      <dl class="detail-list">
+        <dt>Type</dt><dd>${s.type}</dd>
+        <dt>Location</dt><dd>${s.town}, CA</dd>
+        <dt>Guests</dt><dd>Sleeps ${s.sleeps}</dd>
+        <dt>Bedrooms</dt><dd>${s.bedrooms}</dd>
+        <dt>Beds</dt><dd>${s.bedsLabel}</dd>
+        <dt>Bath</dt><dd>${s.baths}</dd>
+        <dt>Check-in</dt><dd>${s.checkin}</dd>
+      </dl>
     </div>
   </div>
-</section>
 
-<section class="section wrap">
-  <div class="description reveal">
-    ${s.intro.map(p => `<p>${p}</p>`).join('\n    ')}
-  </div>
-  <aside class="facts-card reveal d1">
-    <h3>The details</h3>
-    <dl>
-      <dt>Type</dt><dd>${s.type}</dd>
-      <dt>Location</dt><dd>${s.town}, CA</dd>
-      <dt>Guests</dt><dd>Sleeps ${s.sleeps}</dd>
-      <dt>Bedrooms</dt><dd>${s.bedrooms}</dd>
-      <dt>Beds</dt><dd>${s.bedsLabel}</dd>
-      <dt>Bath</dt><dd>${s.baths}</dd>
-      <dt>Check-in</dt><dd>${s.checkin}</dd>
-    </dl>
+  <aside class="booking-rail" id="book">
+    <div class="booking-card">
+      <p class="bc-head">Book direct</p>
+      <p class="bc-sub">Best rate, straight from us &mdash; no platform fees.</p>
+      <iframe id="booking-iframe" title="Book ${s.name}" sandbox="allow-top-navigation allow-scripts allow-same-origin allow-forms allow-popups" src="https://booking.hospitable.com/widget/9dab6440-8935-4d77-af83-689e31a292df/${s.widgetId}"></iframe>
+    </div>
   </aside>
-</section>
-
-<section class="section highlights">
-  <div class="wrap">
-    <p class="eyebrow">What you'll love</p>
-    <h2 style="color:var(--ivory);font-size:clamp(1.8rem,4vw,3rem);">The good stuff.</h2>
-    <ul>
-      ${highlights}
-    </ul>
-  </div>
-</section>
-
-<section class="section gallery-sec">
-  <div class="section-head reveal">
-    <p class="eyebrow">The Gallery</p>
-    <h2>Every corner of ${s.name}.</h2>
-  </div>
-  <div class="slideshow" data-slideshow>
-    <div class="ss-stage">
-      ${slides}
-      <button class="ss-nav ss-prev" aria-label="Previous photo">&#8249;</button>
-      <button class="ss-nav ss-next" aria-label="Next photo">&#8250;</button>
-      <div class="ss-counter"><span class="ss-cur">1</span> / ${imgs.length}</div>
-      <button class="ss-expand" aria-label="View full size">&#11036;</button>
-    </div>
-    <div class="ss-thumbs">
-      ${thumbs}
-    </div>
-  </div>
 </section>
 
 <div class="lightbox" data-lightbox hidden>
