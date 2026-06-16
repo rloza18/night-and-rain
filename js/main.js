@@ -126,4 +126,90 @@
 
     rvMore.addEventListener('click', function () { rvState.shown += 8; renderCards(); });
   }
+
+  // ---- lead-capture popup (fee-waiver offer) ----
+  (function () {
+    // HELD until GoHighLevel is live (per Rafa). Flip to true + wire submitLead() to launch.
+    var POPUP_ENABLED = false;
+    if (!POPUP_ENABLED) return;
+
+    var SEEN_KEY = 'nr_lead_popup_seen';
+    // The Hospitable Direct promo code that waives the service fee (4% = the direct service fee).
+    var FEE_WAIVE_CODE = 'NOFEESHERE';
+    var DELAY_MS = 9000;
+
+    // Lead destination — wired to GoHighLevel when it's live. Returns a promise.
+    function submitLead(data) {
+      // TODO: connect CRM endpoint (GoHighLevel / interim Google Sheet) here.
+      // Until then, surface the lead in the console so nothing silently breaks.
+      try { console.log('[lead]', data); } catch (e) {}
+      return Promise.resolve();
+    }
+
+    if (localStorage.getItem(SEEN_KEY)) return;
+
+    var pop = document.createElement('div');
+    pop.className = 'lead-pop';
+    pop.hidden = true;
+    pop.innerHTML =
+      '<div class="lp-card" role="dialog" aria-modal="true" aria-labelledby="lpTitle">' +
+        '<button class="lp-close" aria-label="Close">&times;</button>' +
+        '<div class="lp-body">' +
+          '<p class="lp-eyebrow">Direct guests only</p>' +
+          '<h3 id="lpTitle">We’ll waive your service fee.</h3>' +
+          '<p class="lp-sub">Join the Night &amp; Rain list and we’ll cover the booking service fee on your first direct stay — plus first dibs on new desert homes.</p>' +
+          '<form class="lp-form" novalidate>' +
+            '<input type="text" name="name" placeholder="First name" autocomplete="given-name" required>' +
+            '<input type="tel" name="phone" placeholder="Phone" autocomplete="tel" required>' +
+            '<input type="email" name="email" placeholder="Email" autocomplete="email" required>' +
+            '<p class="lp-error" hidden>Please fill in all three fields with a valid email.</p>' +
+            '<button class="btn btn-solid" type="submit">Claim my fee waiver</button>' +
+            '<p class="lp-fine">No spam — just desert deals. Unsubscribe anytime.</p>' +
+          '</form>' +
+        '</div>' +
+        '<div class="lp-success" hidden>' +
+          '<p class="lp-eyebrow">You’re in ✨</p>' +
+          '<h3>Here’s your code.</h3>' +
+          '<p class="lp-sub">Enter this at checkout to waive your service fee:</p>' +
+          '<div class="lp-code"><span></span></div>' +
+          '<a class="btn btn-solid" href="/#stays">Browse the stays</a>' +
+        '</div>' +
+      '</div>';
+    document.body.appendChild(pop);
+
+    var card = pop.querySelector('.lp-card');
+    function open() { if (pop.hidden) { pop.hidden = false; requestAnimationFrame(function () { pop.classList.add('in'); }); } }
+    function close() { pop.classList.remove('in'); localStorage.setItem(SEEN_KEY, '1'); setTimeout(function () { pop.hidden = true; }, 350); }
+
+    pop.querySelector('.lp-close').addEventListener('click', close);
+    pop.addEventListener('click', function (e) { if (e.target === pop) close(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !pop.hidden) close(); });
+
+    var form = pop.querySelector('.lp-form');
+    var errEl = pop.querySelector('.lp-error');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var data = { name: form.name.value.trim(), phone: form.phone.value.trim(), email: form.email.value.trim() };
+      var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email);
+      if (!data.name || !data.phone || !emailOk) { errEl.hidden = false; return; }
+      errEl.hidden = true;
+      var btn = form.querySelector('button[type=submit]');
+      btn.disabled = true; btn.textContent = 'Sending…';
+      submitLead(data).then(function () {
+        pop.querySelector('.lp-code span').textContent = FEE_WAIVE_CODE;
+        pop.querySelector('.lp-body').hidden = true;
+        pop.querySelector('.lp-success').hidden = false;
+        localStorage.setItem(SEEN_KEY, '1');
+      });
+    });
+
+    var triggered = false;
+    function trigger() { if (triggered) return; triggered = true; open(); }
+    setTimeout(trigger, DELAY_MS);
+    window.addEventListener('scroll', function () {
+      var sc = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      var h = document.body.scrollHeight - window.innerHeight;
+      if (h > 0 && sc / h > 0.3) trigger();
+    }, { passive: true });
+  })();
 })();

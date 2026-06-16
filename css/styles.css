@@ -209,6 +209,26 @@ h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.04; m
 .rv-vrbo { background: #eef3fb; color: #2f6fd0; }
 .rv-stay { font-size: .74rem; color: var(--moon-gray); text-align: right; }
 .reviews-more { text-align: center; margin-top: 2rem; }
+
+/* lead-capture popup */
+.lead-pop { position: fixed; inset: 0; z-index: 10000; background: rgba(10,14,20,.6); backdrop-filter: blur(3px); display: flex; align-items: center; justify-content: center; padding: 1.2rem; opacity: 0; transition: opacity .35s var(--ease); }
+.lead-pop.in { opacity: 1; }
+.lp-card { position: relative; width: min(440px, 100%); background: var(--ivory); border-radius: 18px; overflow: hidden; box-shadow: 0 30px 80px rgba(10,14,20,.4); transform: translateY(14px) scale(.98); transition: transform .35s var(--ease); }
+.lead-pop.in .lp-card { transform: none; }
+.lp-close { position: absolute; top: .8rem; right: 1rem; width: 34px; height: 34px; border: 0; background: transparent; color: var(--moon-gray); font-size: 1.6rem; line-height: 1; cursor: pointer; z-index: 2; }
+.lp-close:hover { color: var(--ink); }
+.lp-body, .lp-success { padding: 2.4rem 2rem 2rem; text-align: center; }
+.lp-eyebrow { font-size: .7rem; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin: 0 0 .6rem; }
+.lp-card h3 { font-size: clamp(1.6rem, 4vw, 2.1rem); margin: 0 0 .6rem; }
+.lp-sub { color: var(--ink-80); font-size: .94rem; line-height: 1.5; margin: 0 auto 1.4rem; max-width: 34ch; }
+.lp-form { display: flex; flex-direction: column; gap: .6rem; }
+.lp-form input { border: 1px solid var(--sand); border-radius: 9px; background: #fff; padding: .85rem 1rem; font-family: var(--body); font-size: .92rem; color: var(--ink); }
+.lp-form input:focus { outline: none; border-color: var(--gold); }
+.lp-form .btn { margin-top: .3rem; justify-content: center; }
+.lp-error { color: #c0392b; font-size: .8rem; margin: 0; }
+.lp-fine { color: var(--moon-gray); font-size: .72rem; margin: .6rem 0 0; }
+.lp-code { margin: 0 auto 1.4rem; border: 1px dashed var(--gold); border-radius: 10px; background: #fff; padding: 1rem; font-family: var(--display); font-size: 1.6rem; letter-spacing: .15em; color: var(--ink); }
+@media (max-width: 480px) { .lp-body, .lp-success { padding: 2rem 1.3rem 1.6rem; } }
 .email-capture { display: flex; gap: .6rem; max-width: 440px; margin: 0 auto; flex-wrap: wrap; justify-content: center; }
 .email-capture input { flex: 1 1 220px; border: 1px solid var(--ink); background: transparent; padding: 1rem 1.1rem; font-family: var(--body); font-size: .9rem; color: var(--ink); }
 .email-capture input::placeholder { color: var(--moon-gray); }
