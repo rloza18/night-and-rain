@@ -73,9 +73,12 @@ function galleryImages(slug) {
 
 for (const s of stays) {
   const imgs = galleryImages(s.slug);
-  const gallery = imgs.map((f, i) =>
-    `<img src="/assets/library/${s.slug}/${f}" alt="${s.name}" loading="${i < 3 ? 'eager' : 'lazy'}">`
-  ).join('\n    ');
+  const slides = imgs.map((f, i) =>
+    `<img class="ss-slide${i === 0 ? ' is-active' : ''}" src="/assets/library/${s.slug}/${f}" alt="${s.name} — photo ${i + 1} of ${imgs.length}" data-index="${i}" loading="${i < 2 ? 'eager' : 'lazy'}">`
+  ).join('\n      ');
+  const thumbs = imgs.map((f, i) =>
+    `<button class="ss-thumb${i === 0 ? ' is-active' : ''}" data-index="${i}" aria-label="View photo ${i + 1}"><img src="/assets/library/${s.slug}/${f}" alt="" loading="lazy"></button>`
+  ).join('\n      ');
 
   const highlights = s.highlights.map(h => `<li>${h}</li>`).join('\n      ');
 
@@ -103,24 +106,33 @@ ${HEADER}
   </div>
 </section>
 
-<section class="section wrap">
-  <div class="overview">
-    <div class="body reveal">
-      ${s.intro.map(p => `<p>${p}</p>`).join('\n      ')}
+<section class="section book" id="book">
+  <div class="wrap">
+    <p class="eyebrow">Reserve</p>
+    <h2>Book ${s.name} direct.</h2>
+    <p>Real-time availability and the best rate, straight from us — no platform fees. Pick your dates below.</p>
+    <div class="widget-slot">
+      <iframe id="booking-iframe" title="Book ${s.name}" sandbox="allow-top-navigation allow-scripts allow-same-origin allow-forms allow-popups" style="width:100%;min-height:900px;border:0;" frameborder="0" src="https://booking.hospitable.com/widget/9dab6440-8935-4d77-af83-689e31a292df/${s.widgetId}"></iframe>
     </div>
-    <aside class="facts-card reveal d1">
-      <h3>The details</h3>
-      <dl>
-        <dt>Type</dt><dd>${s.type}</dd>
-        <dt>Location</dt><dd>${s.town}, CA</dd>
-        <dt>Guests</dt><dd>Sleeps ${s.sleeps}</dd>
-        <dt>Bedrooms</dt><dd>${s.bedrooms}</dd>
-        <dt>Beds</dt><dd>${s.bedsLabel}</dd>
-        <dt>Bath</dt><dd>${s.baths}</dd>
-        <dt>Check-in</dt><dd>${s.checkin}</dd>
-      </dl>
-    </aside>
   </div>
+</section>
+
+<section class="section wrap">
+  <div class="description reveal">
+    ${s.intro.map(p => `<p>${p}</p>`).join('\n    ')}
+  </div>
+  <aside class="facts-card reveal d1">
+    <h3>The details</h3>
+    <dl>
+      <dt>Type</dt><dd>${s.type}</dd>
+      <dt>Location</dt><dd>${s.town}, CA</dd>
+      <dt>Guests</dt><dd>Sleeps ${s.sleeps}</dd>
+      <dt>Bedrooms</dt><dd>${s.bedrooms}</dd>
+      <dt>Beds</dt><dd>${s.bedsLabel}</dd>
+      <dt>Bath</dt><dd>${s.baths}</dd>
+      <dt>Check-in</dt><dd>${s.checkin}</dd>
+    </dl>
+  </aside>
 </section>
 
 <section class="section highlights">
@@ -138,21 +150,27 @@ ${HEADER}
     <p class="eyebrow">The Gallery</p>
     <h2>Every corner of ${s.name}.</h2>
   </div>
-  <div class="gallery">
-    ${gallery}
-  </div>
-</section>
-
-<section class="section book" id="book">
-  <div class="wrap">
-    <p class="eyebrow">Reserve</p>
-    <h2>Book ${s.name} direct.</h2>
-    <p>Real-time availability and the best rate, straight from us — no platform fees. Check your dates below.</p>
-    <div class="widget-slot">
-      <iframe id="booking-iframe" title="Book ${s.name}" sandbox="allow-top-navigation allow-scripts allow-same-origin allow-forms allow-popups" style="width:100%;min-height:900px;border:0;" frameborder="0" src="https://booking.hospitable.com/widget/9dab6440-8935-4d77-af83-689e31a292df/${s.widgetId}"></iframe>
+  <div class="slideshow" data-slideshow>
+    <div class="ss-stage">
+      ${slides}
+      <button class="ss-nav ss-prev" aria-label="Previous photo">&#8249;</button>
+      <button class="ss-nav ss-next" aria-label="Next photo">&#8250;</button>
+      <div class="ss-counter"><span class="ss-cur">1</span> / ${imgs.length}</div>
+      <button class="ss-expand" aria-label="View full size">&#11036;</button>
+    </div>
+    <div class="ss-thumbs">
+      ${thumbs}
     </div>
   </div>
 </section>
+
+<div class="lightbox" data-lightbox hidden>
+  <button class="lb-close" aria-label="Close gallery">&times;</button>
+  <button class="lb-nav lb-prev" aria-label="Previous photo">&#8249;</button>
+  <img class="lb-img" alt="">
+  <button class="lb-nav lb-next" aria-label="Next photo">&#8250;</button>
+  <div class="lb-counter"></div>
+</div>
 
 <section class="section more-stays wrap">
   <p class="eyebrow">More desert stays</p>
