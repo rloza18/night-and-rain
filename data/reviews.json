@@ -1,0 +1,274 @@
+{
+  "stats": {
+    "all": {
+      "count": 400,
+      "avg": 4.9
+    },
+    "airbnb": {
+      "count": 400,
+      "avg": 4.9
+    },
+    "vrbo": {
+      "count": 0,
+      "avg": 0
+    }
+  },
+  "reviews": [
+    {
+      "name": "Daniella P.",
+      "date": "June 10, 2026",
+      "rating": 5,
+      "text": "Rafael home was unique and full of character!! Has a great aura! The host was very attentive and helpful throughout our stay!! It was a perfect getaway for my fiancé‘s birthday!!",
+      "platform": "airbnb",
+      "stay": "The Dojo"
+    },
+    {
+      "name": "Viran T.",
+      "date": "June 7, 2026",
+      "rating": 5,
+      "text": "Me and my girlfriend had an amazing stay. The place is small but was perfect for 2. The host is very responsive and was always willing to help.",
+      "platform": "airbnb",
+      "stay": "The Outpost"
+    },
+    {
+      "name": "Trino P.",
+      "date": "June 7, 2026",
+      "rating": 5,
+      "text": "The stay was great. The host was very responsive. Would recommend to my friends and family!",
+      "platform": "airbnb",
+      "stay": "The Dojo"
+    },
+    {
+      "name": "Carlos A.",
+      "date": "June 7, 2026",
+      "rating": 5,
+      "text": "Great location. Perfect for 2. Jacuzzi has no on site control so you have to contact host which is somewhat inconvenient. But to be fair he was fast to respond. Several Cactus in the backyard so not as pet friendly as I was hoping. If your an Anima fan this spot is pretty cool and if your not it still pretty interesting. Had a great time.",
+      "platform": "airbnb",
+      "stay": "The Dojo"
+    },
+    {
+      "name": "Antonio C.",
+      "date": "June 5, 2026",
+      "rating": 5,
+      "text": "We had an amazing stay at this Airbnb! The property was clean, comfortable, and exactly as described. The amenities were awesome and really made our stay enjoyable. Everything was well-maintained, and it felt like a home away from home.\n\nThe host was great, and the overall experience exceeded our expectations. I would definitely recommend this Airbnb to anyone looking for a relaxing and enjoyable place to stay. We would gladly stay here again!",
+      "platform": "airbnb",
+      "stay": "The Night House"
+    },
+    {
+      "name": "Ericka A.",
+      "date": "June 5, 2026",
+      "rating": 5,
+      "text": "It was a quick getaway for our little group. The house was beautiful, and the property was great. We utilized the pickleball court. We did some stargazing around the fire pit. It was also very magical to see a few shooting stars! We were also able to bring our dog since it was pet-friendly. She had just as much fun as we did. Rafa was an amazing host and also very responsive to any questions we had. I highly recommend staying here!",
+      "platform": "airbnb",
+      "stay": "The Rain House"
+    },
+    {
+      "name": "Cameron H.",
+      "date": "June 3, 2026",
+      "rating": 5,
+      "text": "I would highly recommend a stay at this property to anyone looking for a luxury stay in Joshua Tree. The pool is excellently kept and the jacuzzi is easy to operate and just needs a short time to heat up.\n\nThe property has all the amenities you would need as well as an outdoor cooking/seating area (with tv), a pickleball court and a couple of options of other outdoor games.\n\nIt was easy to check in and access the property with plenty of safe parking.",
+      "platform": "airbnb",
+      "stay": "The Night House"
+    },
+    {
+      "name": "Liseth",
+      "date": "May 31, 2026",
+      "rating": 5,
+      "text": "My stay here was incredible exactly as listed I had a wonderful beautiful time and the host was very responsive. Check in was easy would definitely stay here again.",
+      "platform": "airbnb",
+      "stay": "The Outpost"
+    },
+    {
+      "name": "Natlee L.",
+      "date": "May 27, 2026",
+      "rating": 5,
+      "text": "Rafa is such a great host. I enjoyed our little getaway. He was very fast at replying & made it very relaxing. We will definitely be back!",
+      "platform": "airbnb",
+      "stay": "The Outpost"
+    },
+    {
+      "name": "Jamie B.",
+      "date": "May 26, 2026",
+      "rating": 5,
+      "text": "Our host was always responded quickly, even helping us in the middle of the night immediately.  He gave us clear instructions check-in and check out.  The place was just as described and the photos matched perfectly.  I will definitely be back. Thank you so much for the great stay.",
+      "platform": "airbnb",
+      "stay": "The Night House"
+    },
+    {
+      "name": "Byron H.",
+      "date": "May 26, 2026",
+      "rating": 5,
+      "text": "Place is very clean and beautiful and provides lots of privacy and the host is very respectful and responsive for questions you have for him would definitely re book here again",
+      "platform": "airbnb",
+      "stay": "The Outpost"
+    },
+    {
+      "name": "John H.",
+      "date": "May 25, 2026",
+      "rating": 5,
+      "text": "Place is sick. If you need a relaxing weekend, rent this spot.",
+      "platform": "airbnb",
+      "stay": "The Night House"
+    },
+    {
+      "name": "Juan N.",
+      "date": "May 25, 2026",
+      "rating": 5,
+      "text": "The place was immaculate . It was perfect place for relaxation with all the amenities . I went with my wife and my two little ones and they loved the pool , jacuzzi and the comfortable living room with the magical fireplace  . The town had a lot of stores and it was near by , absolutely perfect . I would recommend staying at this property without any hesitation .",
+      "platform": "airbnb",
+      "stay": "The Rain House"
+    },
+    {
+      "name": "Jackie R.",
+      "date": "May 25, 2026",
+      "rating": 5,
+      "text": "We enjoyed our stay, everything was great! we enjoyed everything about this property pool area was beautiful, and the inside was super cool! definitely recommend staying here!!!",
+      "platform": "airbnb",
+      "stay": "The Dojo"
+    },
+    {
+      "name": "Indiana M.",
+      "date": "May 24, 2026",
+      "rating": 5,
+      "text": "Beautiful secluded stay in Joshua Tree. Our pup had a great time as well.",
+      "platform": "airbnb",
+      "stay": "The Rain House"
+    },
+    {
+      "name": "Elena M.",
+      "date": "May 20, 2026",
+      "rating": 5,
+      "text": "This place was perfect for a weekend getaway with friends. The location was remote enough that we felt like we were out in the desert which we liked, but also close enough to town that we could go get drinks at the local saloon super easily. Extremely close to the national park which was super fun, and the pool and pickleball court were so much fun and we used them well. It even came with a blow up mattress and tons of blankets that we could use for our extra person! Amazing stay!",
+      "platform": "airbnb",
+      "stay": "The Rain House"
+    },
+    {
+      "name": "⁨Sione (John)⁩ A.",
+      "date": "May 18, 2026",
+      "rating": 5,
+      "text": "Cant fault this place. Definitely a vibe and experience you have to feel for yourself. Will definitely recommend to all my family and friends",
+      "platform": "airbnb",
+      "stay": "The Dojo"
+    },
+    {
+      "name": "Justin N.",
+      "date": "May 18, 2026",
+      "rating": 5,
+      "text": "Stayed here for one night and it was great. The anime theme was nice, from the decor and posters to all the cool little details. Definitely different from the typical Airbnbs you usually see.\nThe place was spotless, the bed was comfortable, and everything worked perfectly. Host gave simple check in and check out instructions. A memorable stay, would book again!",
+      "platform": "airbnb",
+      "stay": "The Dojo"
+    },
+    {
+      "name": "Nana L.",
+      "date": "May 18, 2026",
+      "rating": 5,
+      "text": "After having a hard time coping with the passing of our beloved dog, we were looking for an amazing getaway and that’s what Rafa and his beautiful home delivered. His quick and friendly communication made the booking easy, and his property had everything we need for any type of mood we were in. I definitely recommend this place if you have fresh air, privacy, and relaxation.",
+      "platform": "airbnb",
+      "stay": "The Night House"
+    },
+    {
+      "name": "Casey M.",
+      "date": "May 16, 2026",
+      "rating": 5,
+      "text": "We had a great stay in the desert. Easy to get to Joshua Tree park as well as fun attractions in the sound. We also loved grilling and spending time in the pool and playing the yard games at the place. We would return!",
+      "platform": "airbnb",
+      "stay": "The Night House"
+    },
+    {
+      "name": "Zoila Q.",
+      "date": "May 15, 2026",
+      "rating": 5,
+      "text": "We had a lovely peaceful stay at Rafas desert oasis. It was Exackly as described!",
+      "platform": "airbnb",
+      "stay": "The Rain House"
+    },
+    {
+      "name": "Maggie A.",
+      "date": "May 11, 2026",
+      "rating": 5,
+      "text": "This place was incredible! The house is so clean and cute. The backyard had a lot to do. We loved going in the hot tub under the stars at night and playing the games during the day. Rafa is super quick to respond and made us feel very comfortable!",
+      "platform": "airbnb",
+      "stay": "The Night House"
+    },
+    {
+      "name": "Lizet C.",
+      "date": "May 9, 2026",
+      "rating": 5,
+      "text": "Had an amazing stay. was easy to check in. was very clean and comfortable. love the animation.",
+      "platform": "airbnb",
+      "stay": "The Dojo"
+    },
+    {
+      "name": "Ramiro A.",
+      "date": "May 8, 2026",
+      "rating": 5,
+      "text": "Had a great time. Bothered Rafa with 100 question and he kindly replied to all of them. Thanks for the time and experience.",
+      "platform": "airbnb",
+      "stay": "The Night House"
+    },
+    {
+      "name": "Brittany B.",
+      "date": "May 8, 2026",
+      "rating": 5,
+      "text": "My husband and I stayed here for our anniversary this year. The place was perfect for us as a couple. The bed was good quality and very comfortable. The yard was beautiful and the pool and jacuzzi were our favorite. The host was very responsive to my messages during our stay, always responding immediately. The fire pit was a nice touch and since it’s gas powered, we didn’t have to buy any firewood or anything. I would love to stay here again! Thank you so much",
+      "platform": "airbnb",
+      "stay": "The Dojo"
+    },
+    {
+      "name": "Milton N.",
+      "date": "May 7, 2026",
+      "rating": 5,
+      "text": "Had a great time! Place was amazing for a quick two night stay! Definitely one to comeback too!",
+      "platform": "airbnb",
+      "stay": "The Rain House"
+    },
+    {
+      "name": "Angelo A.",
+      "date": "May 4, 2026",
+      "rating": 5,
+      "text": "This place is great! Its early May in the 80s. Jacuzzi was enjoyable with the sunset. I did some cold plunge hot plunge therapy with the pool and jacuzzi. The place is interesting and fun and met all my needs. The rice cooker was a plus. I would stay here again. \n\nWe brought our two dogs with us as yucca valley and pioneer town are very dog friendly.",
+      "platform": "airbnb",
+      "stay": "The Dojo"
+    },
+    {
+      "name": "Nikki D.",
+      "date": "May 2, 2026",
+      "rating": 5,
+      "text": "We had a wonderful stay! The house is in a great location, quiet, clean, and comfortable. The outdoor shower and hammock was a highlight. The hosts were excellent: responsive, respectful, and easy to communicate with. We hope we made a good impression and would love to come back again. Thank you, Rafa!",
+      "platform": "airbnb",
+      "stay": "The Outpost"
+    },
+    {
+      "name": "Mauricio K.",
+      "date": "April 25, 2026",
+      "rating": 5,
+      "text": "This place was absolutely amazing! The host was incredibly welcoming and attentive, constantly checking in to ensure every aspect of our stay was perfect. We truly appreciated the hospitality and felt right at home from the moment we arrived.\nThe highlight of the trip was definitely the outdoor space—we spent hours lounging by the beautiful pool, and the sunsets each evening were simply breathtaking. It was the perfect backdrop for a relaxing getaway. We’re already looking forward to returning soon to soak up more of that stunning scenery and peaceful atmosphere!",
+      "platform": "airbnb",
+      "stay": "The Outpost"
+    },
+    {
+      "name": "Precious",
+      "date": "April 22, 2026",
+      "rating": 5,
+      "text": "Great place to stay for peace & quite outside of hussle and bustle from the city life. My family love the place and would definitely love to come back to. I would recommend this place for every family.",
+      "platform": "airbnb",
+      "stay": "The Night House"
+    },
+    {
+      "name": "Julio A.",
+      "date": "April 21, 2026",
+      "rating": 5,
+      "text": "Amazing stay, enjoyed the full size pool. Everything you need for a weekend getaway!",
+      "platform": "airbnb",
+      "stay": "The Outpost"
+    },
+    {
+      "name": "Matt H.",
+      "date": "April 15, 2026",
+      "rating": 5,
+      "text": "My favorite part of the stay was the sauna! \n\nGreat experience to be able to use the sauna and layout before starting the day. \n\n5⭐️",
+      "platform": "airbnb",
+      "stay": "The Outpost"
+    }
+  ]
+}
