@@ -71,4 +71,59 @@
       else if (e.key === 'ArrowLeft') step(-1);
     });
   }
+
+  // ---- guest reviews ----
+  var rvGrid = document.querySelector('[data-review-grid]');
+  if (rvGrid) {
+    var rvTabs = document.querySelector('[data-review-tabs]');
+    var rvMore = document.querySelector('[data-review-more]');
+    var rvState = { filter: 'all', shown: 8, data: null };
+    var PREVIEW = 150;
+
+    fetch('/data/reviews.json').then(function (r) { return r.json(); }).then(function (d) {
+      rvState.data = d; renderTabs(); renderCards();
+    }).catch(function () { var s = document.getElementById('reviews'); if (s) s.style.display = 'none'; });
+
+    function label(p) { return p === 'airbnb' ? 'Airbnb' : p === 'vrbo' ? 'Vrbo' : p; }
+    function stars(n) { var s = ''; for (var i = 0; i < 5; i++) s += '<span class="star' + (i < n ? ' on' : '') + '">★</span>'; return s; }
+    function filtered() { return rvState.data.reviews.filter(function (r) { return rvState.filter === 'all' || r.platform === rvState.filter; }); }
+
+    function renderTabs() {
+      var s = rvState.data.stats;
+      var tabs = [{ k: 'all', l: 'All Reviews', s: s.all }];
+      if (s.airbnb.count) tabs.push({ k: 'airbnb', l: 'Airbnb', s: s.airbnb });
+      if (s.vrbo.count) tabs.push({ k: 'vrbo', l: 'Vrbo', s: s.vrbo });
+      rvTabs.innerHTML = tabs.map(function (t) {
+        return '<button class="rv-tab' + (t.k === rvState.filter ? ' is-active' : '') + '" data-filter="' + t.k + '">' + t.l + ' <strong>' + t.s.avg.toFixed(1) + '</strong></button>';
+      }).join('');
+      rvTabs.querySelectorAll('.rv-tab').forEach(function (b) {
+        b.addEventListener('click', function () { rvState.filter = b.dataset.filter; rvState.shown = 8; renderTabs(); renderCards(); });
+      });
+    }
+
+    function renderCards() {
+      var list = filtered();
+      rvGrid.innerHTML = list.slice(0, rvState.shown).map(function (r) {
+        var long = r.text.length > PREVIEW;
+        var txt = long ? r.text.slice(0, PREVIEW).trim() + '…' : r.text;
+        return '<article class="rv-card">' +
+          '<div class="rv-head"><span class="rv-avatar">' + r.name.charAt(0) + '</span><div><p class="rv-name">' + r.name + '</p><p class="rv-date">' + r.date + '</p></div></div>' +
+          '<div class="rv-stars">' + stars(r.rating) + '</div>' +
+          '<p class="rv-text"' + (long ? ' data-full="' + encodeURIComponent(r.text) + '"' : '') + '>' + txt + '</p>' +
+          (long ? '<button class="rv-readmore" type="button">Read more</button>' : '') +
+          '<div class="rv-foot"><span class="rv-badge rv-' + r.platform + '">' + label(r.platform) + '</span><span class="rv-stay">' + r.stay + '</span></div>' +
+          '</article>';
+      }).join('');
+      rvGrid.querySelectorAll('.rv-readmore').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var p = btn.previousElementSibling, full = decodeURIComponent(p.dataset.full);
+          if (btn.textContent === 'Read more') { p.textContent = full; btn.textContent = 'Show less'; }
+          else { p.textContent = full.slice(0, PREVIEW).trim() + '…'; btn.textContent = 'Read more'; }
+        });
+      });
+      rvMore.style.display = rvState.shown < list.length ? '' : 'none';
+    }
+
+    rvMore.addEventListener('click', function () { rvState.shown += 8; renderCards(); });
+  }
 })();
