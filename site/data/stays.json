@@ -1,7 +1,7 @@
 [
   {
-    "slug": "night-house",
-    "name": "The Night House",
+    "slug": "the-outpost",
+    "name": "The Outpost",
     "uuid": "8878daf6-0d90-4eeb-a2ec-7864e8633a91",
     "type": "Tiny Home",
     "town": "Yucca Valley",
@@ -11,16 +11,16 @@
     "bedsLabel": "1 King + Queen air bed",
     "checkin": "4:00 PM",
     "hero": "01.jpg",
-    "tagline": "A tiny home with a big desert backyard.",
+    "tagline": "A high-desert outpost built for those who like their sunsets slow.",
     "intro": [
-      "Tucked into the quiet edge of Yucca Valley, fifteen minutes from the national park, The Night House is a pint-sized desert hideaway that lives far larger than its footprint.",
-      "Step outside to a saltwater pool, a steaming hot tub, a cedar sauna, and a mini-golf green — all yours, all framed by Joshua trees and open sky. Days wind down around the firepit; nights end under more stars than you can count."
+      "Tucked into the quiet edge of Yucca Valley, The Outpost is a tiny home that earns its name — remote enough to feel like an escape, appointed enough to feel like a splurge.",
+      "Step outside to your own saltwater pool, steaming hot tub, cedar sauna, and a dusty mini-golf green that rivals any in the county. Nights end around the firepit under an impossibly wide sky. Come in, cowboy."
     ],
     "highlights": ["Saltwater Pool", "Hot Tub", "Cedar Sauna", "Mini Golf", "Fire Pit", "Outdoor Shower", "Joshua Trees in the Yard"]
   },
   {
-    "slug": "rain-house",
-    "name": "The Rain House",
+    "slug": "the-dojo",
+    "name": "The Dojo",
     "uuid": "e82db06c-8367-417d-b4c2-fc3708da11e9",
     "type": "Tiny Home",
     "town": "Yucca Valley",
@@ -30,16 +30,16 @@
     "bedsLabel": "1 King + Queen air bed",
     "checkin": "4:00 PM",
     "hero": "01.jpg",
-    "tagline": "Where desert calm meets a little color.",
+    "tagline": "Level up. Zone out. The desert has never been this legendary.",
     "intro": [
-      "The Rain House is the artful one — a bold mural across the wall, a stack of manga on the shelf, and a patio built for golden-hour movie nights.",
-      "Behind the playful details is the same serene Yucca Valley escape: a private saltwater pool, hot tub, sauna, and mini-golf, with Joshua trees standing guard. Come for the photos, stay for the quiet."
+      "The Dojo doesn't take itself too seriously — and that's exactly the point. A bold anime mural commands the exterior, shelves of collectibles line the walls inside, and a full gaming setup means the fun doesn't stop when the sun goes down.",
+      "And yet: same serene Yucca Valley setting as always. Private saltwater pool, hot tub, sauna, mini-golf, and Joshua trees just outside the fence. Earn your rest. Then geek out."
     ],
-    "highlights": ["Saltwater Pool", "Hot Tub", "Sauna", "Statement Mural", "Mini Golf", "Patio Theater", "Fire Pit"]
+    "highlights": ["Saltwater Pool", "Hot Tub", "Sauna", "Anime Mural", "Gaming Setup", "Mini Golf", "Fire Pit"]
   },
   {
-    "slug": "the-oasis",
-    "name": "The Oasis",
+    "slug": "the-rain-house",
+    "name": "The Rain House",
     "uuid": "bf0f6e37-3415-4454-aaa0-1591d03f0bf2",
     "type": "Desert Home",
     "town": "Joshua Tree",
@@ -48,17 +48,17 @@
     "baths": 1,
     "bedsLabel": "2 King + Queen air bed",
     "checkin": "4:00 PM",
-    "hero": "01.jpg",
+    "hero": "04.jpg",
     "tagline": "Your own wide-open slice of the high desert.",
     "intro": [
-      "On a sweeping lot in Joshua Tree, The Oasis is made for gathering. Rally on your private pickleball court, roll a round of bocce, then cool off in the saltwater pool or sink into the jacuzzi as the sun drops behind the mountains.",
+      "On a sweeping lot in Joshua Tree, The Rain House is made for gathering. Rally on your private pickleball court, roll a round of bocce, then cool off in the saltwater pool or sink into the jacuzzi as the sun drops behind the mountains.",
       "Two king bedrooms, a fully fenced yard, hammocks, a firepit, and panoramic desert views — all just minutes from the park gate."
     ],
     "highlights": ["Private Pickleball Court", "Saltwater Pool", "Hot Tub", "Bocce Court", "Fire Pit", "Mountain Views", "EV Charger"]
   },
   {
-    "slug": "the-dome",
-    "name": "The Dome",
+    "slug": "the-night-house",
+    "name": "The Night House",
     "uuid": "547bbb9c-7e50-4d45-8636-00f000d218e4",
     "type": "Desert Home",
     "town": "Joshua Tree",
@@ -70,7 +70,7 @@
     "hero": "24.jpg",
     "tagline": "Fall asleep counting stars.",
     "intro": [
-      "The Dome's headline act is exactly what it sounds like — a private bubble dome with a queen bed, where the Milky Way is your ceiling.",
+      "The Night House earns its name after dark — a private bubble dome with a queen bed, where the Milky Way is your ceiling.",
       "Below it sits a modern desert home with a saltwater pool, jacuzzi, pickleball and bocce courts, and a firepit built for long desert nights. Two king bedrooms inside, room for the whole crew, and some of the darkest skies in California overhead."
     ],
     "highlights": ["Stargazing Bubble Dome", "Saltwater Pool", "Hot Tub", "Pickleball Court", "Bocce Court", "Fire Pit", "Dark-Sky Views"]
