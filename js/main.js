@@ -127,10 +127,17 @@
     rvMore.addEventListener('click', function () { rvState.shown += 8; renderCards(); });
   }
 
+  // ---- lead destination: GoHighLevel inbound webhook (shared by popup + signup) ----
+  var LEAD_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/9dbh4VeKrcUaFQYmJTcz/webhook-trigger/3442e8a0-4a5c-46bf-aea8-b2b86a72ea42';
+  function sendLead(data) {
+    var body = new URLSearchParams(); // form-encoded = simple cross-origin POST, no preflight
+    Object.keys(data).forEach(function (k) { if (data[k] != null) body.append(k, data[k]); });
+    return fetch(LEAD_WEBHOOK, { method: 'POST', body: body }).catch(function () {});
+  }
+
   // ---- lead-capture popup (fee-waiver offer) ----
   (function () {
-    // HELD until GoHighLevel is live (per Rafa). Flip to true + wire submitLead() to launch.
-    var POPUP_ENABLED = false;
+    var POPUP_ENABLED = true;
     if (!POPUP_ENABLED) return;
 
     var SEEN_KEY = 'nr_lead_popup_seen';
@@ -138,12 +145,8 @@
     var FEE_WAIVE_CODE = 'NOFEESHERE';
     var DELAY_MS = 9000;
 
-    // Lead destination — wired to GoHighLevel when it's live. Returns a promise.
     function submitLead(data) {
-      // TODO: connect CRM endpoint (GoHighLevel / interim Google Sheet) here.
-      // Until then, surface the lead in the console so nothing silently breaks.
-      try { console.log('[lead]', data); } catch (e) {}
-      return Promise.resolve();
+      return sendLead({ first_name: data.name, phone: data.phone, email: data.email, source: 'nightandrain.com', form: 'fee-waiver popup' });
     }
 
     if (localStorage.getItem(SEEN_KEY)) return;
@@ -212,4 +215,20 @@
       if (h > 0 && sc / h > 0.3) trigger();
     }, { passive: true });
   })();
+
+  // ---- "Join the list" footer/CTA signup form ----
+  var jl = document.querySelector('.email-capture');
+  if (jl) {
+    jl.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var input = jl.querySelector('input[type=email]');
+      var email = (input.value || '').trim();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { input.focus(); return; }
+      var btn = jl.querySelector('button');
+      btn.disabled = true; btn.textContent = 'Joining…';
+      sendLead({ email: email, source: 'nightandrain.com', form: 'join the list' }).then(function () {
+        jl.innerHTML = '<p style="margin:0;font-size:1.05rem;color:var(--ink);">You’re on the list — desert deals incoming. ✨</p>';
+      });
+    });
+  }
 })();
