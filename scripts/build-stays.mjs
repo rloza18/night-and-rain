@@ -29,6 +29,7 @@ const HEADER = `
   <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
   <nav class="nav" id="nav">
     <a href="/#stays">The Stays</a>
+    <a href="/things-to-do/">Things to Do</a>
     <a href="/#reviews">Reviews</a>
     <a href="/about/">About</a>
     <a href="/management-services/">Management</a>

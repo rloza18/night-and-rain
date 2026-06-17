@@ -84,7 +84,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.04; m
 .brand .logo-dark { display: none; }
 .scrolled .brand .logo-light { display: none; }
 .scrolled .brand .logo-dark { display: block; }
-.nav { display: flex; align-items: center; gap: 2.2rem; }
+.nav { display: flex; align-items: center; gap: 1.5rem; white-space: nowrap; }
 .nav a { font-size: .76rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--ivory); transition: color .5s var(--ease); }
 .scrolled .nav a { color: var(--ink); }
 .nav a.nav-cta { border: 1px solid rgba(246,242,234,.5); padding: .6rem 1.2rem; }
@@ -256,7 +256,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.04; m
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1 !important; transform: none !important; } .scroll-cue::after, .stars { animation: none; } html { scroll-behavior: auto; } }
 
 /* ---------- responsive ---------- */
-@media (max-width: 860px) {
+/* nav collapses to hamburger earlier so 5 links + CTA never wrap */
+@media (max-width: 1024px) {
   .nav { position: fixed; inset: 0 0 0 auto; width: min(78vw, 320px); background: var(--midnight);
     flex-direction: column; align-items: flex-start; justify-content: center; gap: 1.8rem; padding: 2rem;
     transform: translateX(100%); transition: transform .5s var(--ease); }
@@ -269,7 +270,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.04; m
   .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav-toggle.open span:nth-child(2) { opacity: 0; }
   .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
+}
+@media (max-width: 860px) {
   .brand .logo { height: 42px; }
   .stay { grid-template-columns: 1fr; gap: 1.5rem; }
   .stay:nth-child(even) .stay-media { order: 0; }
@@ -423,6 +425,28 @@ h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.04; m
 
 @media (max-width: 860px) {
   .ms-prompts, .ms-values .wrap, .ms-options-grid, .ms-handle-grid, .ms-why-list { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   THINGS TO DO PAGE
+   ============================================================ */
+.td-rows { display: flex; flex-direction: column; gap: clamp(3rem, 8vh, 6rem); }
+.td-row { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.td-row:nth-child(even) .td-media { order: 2; }
+.td-media { aspect-ratio: 4 / 3; overflow: hidden; border-radius: 14px; background: var(--sand); }
+.td-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s var(--ease); }
+.td-row:hover .td-media img { transform: scale(1.04); }
+.td-body h2 { font-size: clamp(1.8rem, 3.6vw, 2.8rem); margin: .3rem 0 .8rem; }
+.td-body > p { color: var(--ink-80); font-size: 1.05rem; margin: 0 0 1.2rem; max-width: 46ch; }
+.td-list { list-style: none; padding: 0; margin: 0; }
+.td-list li { position: relative; padding: .55rem 0 .55rem 1.6rem; color: var(--ink); font-size: 1rem; border-bottom: 1px solid var(--sand); }
+.td-list li::before { content: ""; position: absolute; left: 0; top: 1rem; width: 7px; height: 7px; border: 1px solid var(--gold); transform: rotate(45deg); }
+.td-list li.td-soft { color: var(--moon-gray); font-style: italic; }
+.td-list li.td-soft::before { border-color: var(--moon-gray); }
+
+@media (max-width: 860px) {
+  .td-row { grid-template-columns: 1fr; gap: 1.4rem; }
+  .td-row:nth-child(even) .td-media { order: 0; }
 }
 
 /* ============================================================
