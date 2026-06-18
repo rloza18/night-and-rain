@@ -91,6 +91,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.04; m
 .scrolled .nav a.nav-cta { border-color: var(--gold); }
 .nav a:hover { color: var(--gold); }
 .nav-toggle { display: none; }
+/* mobile-only persistent Book button (next to hamburger); hidden on desktop */
+.header-cta { display: none; }
 
 /* ---------- hero ---------- */
 .hero {
@@ -258,10 +260,17 @@ h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.04; m
 /* ---------- responsive ---------- */
 /* nav collapses to hamburger earlier so 5 links + CTA never wrap */
 @media (max-width: 1024px) {
-  .nav { position: fixed; inset: 0 0 0 auto; width: min(78vw, 320px); background: var(--midnight);
+  /* blur creates a containing block that traps the fixed nav — remove it on mobile so the drawer fills the screen */
+  .site-header.scrolled { backdrop-filter: none; -webkit-backdrop-filter: none; background: var(--ivory); }
+  .nav { position: fixed; inset: 0 0 0 auto; width: min(80vw, 320px); background: var(--midnight); z-index: 65;
     flex-direction: column; align-items: flex-start; justify-content: center; gap: 1.8rem; padding: 2rem;
-    transform: translateX(100%); transition: transform .5s var(--ease); }
+    box-shadow: -20px 0 60px rgba(10,14,20,.4);
+    transform: translateX(100%); transition: transform .45s var(--ease); }
   .nav.open { transform: none; }
+  /* persistent Book button beside the hamburger */
+  .header-cta { display: inline-flex; align-items: center; margin-left: auto; margin-right: .8rem;
+    background: var(--gold); color: var(--midnight); font-family: var(--body); font-size: .68rem; font-weight: 600;
+    letter-spacing: .12em; text-transform: uppercase; padding: .6rem 1rem; border-radius: 7px; }
   .nav a, .scrolled .nav a { color: var(--ivory); font-size: 1rem; }
   .nav-toggle { display: flex; flex-direction: column; gap: 5px; z-index: 70; background: none; border: 0; cursor: pointer; padding: 6px; }
   .nav-toggle span { width: 26px; height: 2px; background: var(--ivory); transition: .4s var(--ease); }
